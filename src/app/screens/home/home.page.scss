@@ -1,0 +1,87 @@
+
+ion-content {
+  margin-top: 20px;
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+.make{
+  margin-top: 55px;
+  background-color: rgb(238, 65, 65);
+  color: white;
+  height: 200px;
+  width: 100%;
+}
+.avatar{
+  //border-radius: 100%;
+  margin-top: -55px;
+  height: 250px;
+}
+}
+
+ion-toolbar{
+  .avatar{
+    border-radius: 50%;
+  }
+  .name-avatar{
+    margin-top: 15px;
+    margin-left: 10px;
+    //text-align: center;
+  }
+}
+
+.name-item{
+  //margin-top: 15px;
+  margin-left: 10px;
+  //text-align: center;
+}
+
+.icon{
+  margin-top: 10px;
+}
+
+.color1{
+  color:rgb(211, 206, 206)
+}
+
+.btn{
+  display: inline-block;
+  font-size: 12px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+  background: #fff;
+  color:#000;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  position: relative;
+}
+.divsearch{
+  width: 90%;
+  display: inline-block;
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 25px;
+  background: rgb(184, 179, 179);
+  color:#000;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+ion-item{
+  padding-top: 10px;
+}
+
+.content{
+  padding: 3%;
+}
+
+.make-text{
+  margin-left: 10px;
+  font-size: 18px;
+}

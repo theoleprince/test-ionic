@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar lines="none">
+
+    <ion-row slot="start">
+      <ion-col size="3">
+        <img class="avatar" src="assets/imgs/avatat.jpeg" alt="">
+      </ion-col>
+      <ion-col size="6" class="name-avatar">
+        <span >Directeur<br>
+          Jean Paul</span>
+      </ion-col>
+    </ion-row>
+
+    <ion-buttons slot="end">
+      <ion-button class="notification">
+        <ion-icon name="notifications-outline" color="dark"></ion-icon>
+        <span>&nbsp;</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="make">
+    <ion-row>
+      <ion-col class="make-text" size="6">
+        <h2>Make your life much easier</h2>
+        <span>order new & girl 50% off of your first ride</span>
+        <button class="btn">otsler ride</button>
+      </ion-col>
+      <ion-col size="5">
+        <img class="avatar" src="assets/imgs/face.png" alt="">
+      </ion-col>
+    </ion-row>
+  </div>
+ <div class="content">
+  <h1 class="list-header">Select a car</h1>
+  <div class="categories">
+    <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
+  </div>
+  <h1 class="list-header">Rides history</h1>
+
+  <!-- SEARCHBAR -->
+  <div class="divsearch">
+    <ion-row>
+      <ion-col size="9" >6 Mar,2022</ion-col>
+      <ion-col size="3" style="color:rgb(238, 65, 65); font-size: 22px;">$24</ion-col>
+    </ion-row>
+  </div>
+
+
+  <div>
+    <ion-item lines="none">
+        <ion-row>
+          <ion-col size="1">
+            <ion-icon class="icon" color="danger" name="ellipse-outline"></ion-icon>
+          </ion-col>
+          <ion-col  size="11">
+            <span class="name-item color1">Directeur Jean Paul</span><br>
+            <span class="name-item" >Directeur Jean Paul Directeur Jean</span><br>
+          </ion-col>
+        </ion-row>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon class="icon" color="danger" name="location-outline"></ion-icon>
+        </ion-col>
+        <ion-col  size="11">
+          <span class="name-item color1">Directeur Jean Paul</span><br>
+          <span class="name-item" >Directeur Jean Paul Directeur Jean</span><br>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-row>
+        <ion-col size="1">
+          <ion-icon class="icon" color="danger" name="ellipse-outline"></ion-icon>
+        </ion-col>
+        <ion-col  size="11">
+          <span class="name-item color1">Directeur Jean Paul</span><br>
+          <span class="name-item" >Directeur Jean Paul Directeur Jean</span><br>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+    <ion-item lines="none">
+        <ion-row>
+          <ion-col size="1">
+            <ion-icon class="icon" color="danger" name="ellipse-outline"></ion-icon>
+          </ion-col>
+          <ion-col  size="11">
+            <span class="name-item color1">Directeur Jean Paul</span><br>
+            <span class="name-item" >Directeur Jean Paul Directeur Jean</span><br>
+          </ion-col>
+        </ion-row>
+    </ion-item>
+  </div>
+ </div>
+</ion-content>
