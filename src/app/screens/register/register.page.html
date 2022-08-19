@@ -1,0 +1,93 @@
+<ion-content [fullscreen]="true">
+  <div id="container" class="ion-margin-top">
+    <ion-grid id="mapinoo-rigister-wrapper" fixed>
+      <ion-row class="ion-justify-content-center">
+        <ion-col class="ion-justify-content-center" size="12">
+          <img class="register-img-logo" src="assets/welcome.png" alt="Mapinoo logo"
+            title="">
+        </ion-col>
+      </ion-row>
+
+      <form>
+        <ion-row class="ion-justify-content-center ion-padding-top ion-padding-bottom">
+          <ion-col class="ion-padding-bottom ion-padding-top ion-margin-top ion-margin-bottom" size="12">
+            <ion-text class="register-heading-text section-title-block" color="dark">S'inscrire</ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-input type="text" placeholder="Nom" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-input type="text" placeholder="Prenom" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-input type="text" placeholder="Nom d'utilisateur" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-input type="email" placeholder="Email de l'utilisateur" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+
+            <ion-item>
+              <ion-input placeholder="Mot de passe" [type]="hide ? 'password' : 'text'"
+                minlength="6" #mysecretpassword required></ion-input>
+
+              <ion-icon style="color:black" *ngIf="hide" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide" name="eye-off-outline" slot="end"></ion-icon>
+              <ion-icon style="color:black" *ngIf="!hide" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide" name="eye-outline" slot="end"></ion-icon>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-item>
+              <ion-input placeholder="Mot de passe"
+                [type]="hide2 ? 'password' : 'text'" minlength="6" #mysecretpassword required></ion-input>
+
+              <ion-icon style="color:black" *ngIf="hide2" (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide2" name="eye-off-outline" slot="end"></ion-icon>
+              <ion-icon style="color:black" *ngIf="!hide2" (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide2" name="eye-outline" slot="end"></ion-icon>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row style="margin-top: 7%;">
+          <div style="width: 100;display: flex;align-items: center;justify-content:space-between;font-size: 12px;">
+            <ion-checkbox color="primary" checked="false"></ion-checkbox>
+            <ion-label style="font-size: 0.8em; margin-left: 5px;" color="danger"
+              >J'accepte les conditions générales et
+              la politique de confidentialité *</ion-label>
+           <!--  <ion-label style="font-size: 0.8em; margin-left: 5px;" color="success">J'accepte les conditions générales et
+              la politique de confidentialité *</ion-label> -->
+          </div>
+        </ion-row>
+        <ion-row style="margin-top: 5%;">
+          <ion-col size="12">
+            <ion-button shape="round" color="mapinoo" size="medium" type="submit" (click)="onLogin()">
+              S'inscrire
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </ion-grid>
+  </div>
+</ion-content>

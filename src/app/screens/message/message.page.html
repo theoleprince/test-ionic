@@ -1,20 +1,32 @@
+<ion-header>
+  <app-header></app-header>
+</ion-header>
 <ion-content class="ion-padding ion-text-center">
-<div class="container">
-  <h1>Welcome to Quick Cab <img src="" alt=""></h1>
-<p>The fastest app to book a taxi, scooter, or a bike online near by you</p>
-<form action="">
-  <ion-select>
-    <ion-select-option selected value="pays1">pays1</ion-select-option>
-    <ion-select-option value="pays2">pays2</ion-select-option>
-    <ion-select-option  value="pays3">pays3</ion-select-option>
-  </ion-select>
-  <ion-input placeholder="Phone number"></ion-input>
-</form>
+  <div class="container">
+    <h1>Welcome to Quick Cab <img src="" alt=""></h1>
+    <p>The fastest app to book a taxi, scooter, or a bike online near by you</p>
+    <form action="">
+      <ion-select>
+        <ion-select-option selected value="pays1">pays1</ion-select-option>
+        <ion-select-option value="pays2">pays2</ion-select-option>
+        <ion-select-option value="pays3">pays3</ion-select-option>
+      </ion-select>
+      <ion-input placeholder="Phone number"></ion-input>
+      <!-- <ngx-intl-tel-input [cssClass]="'custom'" [preferredCountries]="[CountryISO.UnitedStates, CountryISO.UnitedKingdom]"
+			[enableAutoCountrySelect]="true" [enablePlaceholder]="true" [searchCountryFlag]="true"
+			[searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]"
+			[selectedCountryISO]="CountryISO.UnitedKingdom" [phoneValidation]="true" name="phone" formControlName="phone">
+		</ngx-intl-tel-input> -->
+    </form>
 
-<p>By ocking on "Continue" you one agrening to to our <a href="">terms of use</a></p>
+    <p>By ocking on "Continue" you one agrening to to our <a href="">terms of use</a></p>
 
-<div class="button-container">
-  <button class="btn" routerLink="" routerDirection="forward">Continue</button>
-</div>
-</div>
+    <ion-row class="w-100">
+      <ion-col size="12">
+        <ion-button shape="round" routerLink="" color="mapinoo" size="medium" type="submit">
+          Continue
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>

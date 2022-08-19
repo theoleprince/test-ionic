@@ -1,0 +1,39 @@
+<ion-toolbar color="mapinoo">
+  <ion-buttons slot="start">
+    <ion-menu-button class="icon" menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+
+  <ion-buttons slot="end">
+
+    <ion-button slot="icon-only" (click)="displaySearchBar()">
+      <ion-icon name="search" color="light" class="icon"></ion-icon>
+    </ion-button>
+
+    <ion-button>
+      <ion-icon name="notifications-outline" color="light" class="icon"></ion-icon>
+      <span>&nbsp;</span>
+    </ion-button>
+
+    <div class="dropdown">
+      <ion-button class="dropbtn">
+        <ion-icon color="light" class="icon" name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-buttons>
+</ion-toolbar>
+
+<!-- Start Search-Bar -->
+<div *ngIf="isSearching" class="search searchBox">
+  <ion-item class="searchBoxInner" lines="none">
+    <ion-select class="form-control" [interfaceOptions]="customPopoverOptions" interface="popover">
+      <ion-select-option selected value="ALL">ALL</ion-select-option>
+      <ion-select-option  value="vehicule1"> vehicule1</ion-select-option>
+      <ion-select-option  value="vehicule2"> vehicule2</ion-select-option>
+      <ion-select-option  value="vehicule3"> vehicule3</ion-select-option>
+    </ion-select>
+    <ion-input placeholder="Rechercher un ou plusieurs produits..."></ion-input>
+    <ion-icon color="dark" name="search-outline" slot="end"></ion-icon>
+
+  </ion-item>
+</div>
+<!-- End Search-Bar -->

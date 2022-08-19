@@ -1,0 +1,99 @@
+#container {
+  transform: translateY(5%);
+}
+#container a {
+  text-decoration: none;
+}
+.con-button{
+  margin-top: 30%;
+}
+ion-button{
+  text-transform: none;
+}
+.space{
+  margin-top: 5%;
+}
+
+.alert-class h5{
+  color: gray;
+  text-align: justify;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+  background-color: hotpink;
+}
+
+.alert-class .refuser{
+  text-transform: none;
+  color: #C41414;
+}
+.alert-class .accepter{
+  text-transform: none;
+  color: #0ae052;
+}
+
+ion-text h6{
+  margin-top: 1px;
+  font-size: 0.9em;
+  position: relative;
+  display: block;
+}
+
+#mapinoo-login-gorm-wrapper {
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  width: 90%;
+  margin: auto;
+}
+
+#mapinoo-login-gorm-wrapper .w-100 ion-button{
+  width: 100%;
+  font-weight: 500;
+}
+
+#mapinoo-login-gorm-wrapper .register-img-logo{
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+#mapinoo-login-gorm-wrapper .register-heading-text{
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+#mapinoo-login-gorm-wrapper ion-icon{
+  color: #fff;
+  margin-right:5px;
+}
+
+#mapinoo-login-gorm-wrapper ion-label{
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+ion-input{
+  --padding-top: 15px!important;
+  --padding-bottom: 15px!important;
+  --padding-start: 10px!important;
+  font-size: 14px;
+}
+
+ion-input input{
+  padding: 15px;
+}
+
+
+ion-item::part(native) {
+  background: rgba(200,200,200, .1);
+}
+
+
+ion-item{
+  --padding-start: 0;
+  --padding-start: 0;
+}

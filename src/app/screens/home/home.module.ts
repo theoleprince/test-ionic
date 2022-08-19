@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import { CategoryItemModule } from 'src/app/components/category-item/category-item.module';
+import { HeaderModule } from 'src/app/components/header/header.module';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { CategoryItemModule } from 'src/app/components/category-item/category-it
     IonicModule,
     HomePageRoutingModule,
     CategoryItemModule,
+    HeaderModule
   ],
   declarations: [HomePage]
 })

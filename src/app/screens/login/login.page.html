@@ -1,0 +1,75 @@
+<ion-content>
+  <ion-grid id="mapinoo-login-gorm-wrapper">
+    <form>
+      <ion-row class="ion-justify-content-center ion-margin-top ion-margin-bottom">
+        <ion-col class="ion-justify-content-center" size="12">
+          <img class="register-img-logo" src="assets/welcome.png" alt=""
+            title="Cenkyah E-commerce">
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center ion-padding-top ion-padding-bottom">
+        <ion-col class="ion-padding-bottom ion-padding-top ion-margin-top ion-margin-bottom" size="12">
+          <ion-text class="register-heading-text section-title-block" color="dark">Se connecter</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-input type="text" placeholder="Nom d'utilisateur ou adresse mail"
+              required="true"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="space">
+        <ion-col size="12">
+          <ion-item>
+            <ion-input placeholder="Mot de passe" [type]="hide ? 'password' : 'text'"
+              minlength="6" #mysecretpassword required></ion-input>
+
+            <ion-icon style="color:black" *ngIf="hide" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide" name="eye-off-outline" slot="end"></ion-icon>
+            <ion-icon style="color:black" *ngIf="!hide" (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide" name="eye-outline" slot="end"></ion-icon>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="w-100" style="margin-top: 5%;">
+        <ion-col size="12">
+          <ion-button shape="round" color="mapinoo" size="medium" type="submit" (click)="onHome()">
+            Se connecter
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="space">
+        <ion-col size="12">
+          <div color="dark" class="ion-float-right" style="font-size: small">
+            <span style="text-decoration: underline">Mot de passe oublié?</span>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="w-100" style="margin-top: 5%;">
+        <ion-col size="12">
+          <ion-button shape="round" fill="outline" color="mapinoo" size="medium" (click)="onRegister()">
+            S'inscrire
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="w-100 social">
+        <ion-col size="12">
+          <ion-button shape="round" color="google">
+            <ion-icon class="ion-float-left ion-margin-left" name="logo-google" size="medium"></ion-icon>
+            <ion-text>S'inscrire avec google</ion-text>
+          </ion-button>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button shape="round" color="facebook">
+            <ion-icon class="ion-float-left  ion-margin-left" name="logo-facebook" size="medium"></ion-icon>
+            <ion-text>S'inscrire avec facebook</ion-text>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>

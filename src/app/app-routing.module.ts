@@ -14,6 +14,14 @@ const routes: Routes = [
   {
     path: 'pre-face',
     loadChildren: () => import('./screens/pre-face/pre-face.module').then( m => m.PreFacePageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./screens/register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./screens/login/login.module').then( m => m.LoginPageModule)
   }
 
 

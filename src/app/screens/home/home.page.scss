@@ -8,7 +8,7 @@ ion-content {
 }
 .make{
   margin-top: 55px;
-  background-color: rgb(238, 65, 65);
+  background-color: #e31010;
   color: white;
   height: 200px;
   width: 100%;
@@ -65,7 +65,7 @@ ion-toolbar{
   padding: 10px;
   margin-top: 20px;
   margin-left: 25px;
-  background: rgb(184, 179, 179);
+  background: rgb(247, 244, 244);
   color:#000;
   border-radius: 40px;
   border: none;
@@ -85,3 +85,12 @@ ion-item{
   margin-left: 10px;
   font-size: 18px;
 }
+
+ion-list ion-item{
+  --padding-start: 1rem;
+  display: flex;
+  align-items: center;
+  --padding-top:0rem;
+  --padding-bottom:.6rem;
+}
+
